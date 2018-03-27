@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 
 $(document).on('click', '.animal-btn', function() {
-    let baseURL = "http://api.giphy.com/v1/gifs/search?q=";
+    let baseURL = "https://api.giphy.com/v1/gifs/search?q=";
     let animalClicked = $(this).val();
     console.log(animalClicked);
     let APIkey = "&api_key=Ihu91b8WQG80grTn4IPF3lGNvM8VyD18";
