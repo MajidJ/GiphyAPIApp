@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 
 $(document).on('click', '.animal-btn', function() {
-    let baseURL = "http://api.giphy.com/v1/gifs/search?q=";
+    let baseURL = "https://api.giphy.com/v1/gifs/search?q=";
     let animalClicked = $(this).val();
     console.log(animalClicked);
     let APIkey = "&api_key=Ihu91b8WQG80grTn4IPF3lGNvM8VyD18";
@@ -27,7 +27,7 @@ $(document).on('click', '.animal-btn', function() {
             animalImg.attr('src', response.data[i].images.original_still.url);
             animalImg.addClass(`${animalClicked} gif-images card-img-top p-0 img-responsive col-md-12 pb-2`);
             let animalBody = $('<div>');
-            animalBody.addClass('caption pl-3');
+            animalBody.addClass('caption pl-3 pt-2');
             animalBody.append(`<h3>${animalClicked}</h3><p>Rating: ${response.data[i].rating}</p>`);
             let animalCard = $('<div>');
             animalCard.addClass('card img-cards mt-2');
