@@ -1,7 +1,7 @@
 'use strict';
 
 // Global variables
-let animals = ["Elephant", "Duck", "Rhino", "Seahorse", "Kangaroo", "Bat", "Fox", "Lizard", "Snake", "Horse", "Donkey", "Dolphin", "Blue Whale", "Goldfish", "Salmon", "Grizzly Bear", "Honey Badger", "Mole", "Mouse", "Rat", "Cat", "Dog", "Hamster", "Alligator", "Monkey", "Loon"];
+let animals = ["Elephant", "Duck", "Rhino", "Kangaroo", "Bat", "Fox", "Lizard", "Snake", "Horse", "Donkey", "Dolphin", "Blue Whale", "Goldfish", "Salmon", "Grizzly Bear", "Honey Badger", "Mole", "Mouse", "Rat", "Cat", "Dog", "Hamster", "Alligator", "Monkey"];
 
 
 $(document).ready(function() {
