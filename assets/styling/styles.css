@@ -1,3 +1,34 @@
+body {
+  background-color: #eaeaea;
+}
+.brand-styling {
+  color: #419bff;
+  font-size: 30px;
+  font-weight: bold;
+}
+img:hover {
+  cursor: pointer;
+}
+.card-header {
+  background-color: #00c6b3;
+  color: #ffffff;
+}
+.animal-btn {
+  background-color: #419bff;
+  color: #ffffff;
+}
+.add-animal {
+  background-color: #ffd032;
+  color: #4d4d4d;
+}
+.card {
+  border: 0px;
+}
+.img-cards {
+  background-color: #f0f0f0;
+  color: #4d4d4d;
+  border: 0px;
+}
 @media (max-width: 768px) {
   .navbar-header {
     float: left;
