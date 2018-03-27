@@ -1,7 +1,7 @@
 'use strict';
 
 // Global variables
-let animals = ["Elephant", "Duck", "Rhino", "Seahorse", "Kangaroo", "Bat", "Fox", "Lizard", "Snake", "Horse", "Donkey", "Dolphin", "Blue Whale", "Goldfish", "Salmon", "Grizzly Bear", "Honey Badger", "Mole", "Mouse", "Rat", "Cat", "Dog", "Hamster", "Alligator", "Monkey", "Loon"];
+let animals = ["Elephant", "Duck", "Rhino", "Kangaroo", "Bat", "Fox", "Lizard", "Snake", "Horse", "Donkey", "Dolphin", "Blue Whale", "Goldfish", "Salmon", "Grizzly Bear", "Honey Badger", "Mole", "Mouse", "Rat", "Cat", "Dog", "Hamster", "Alligator", "Monkey"];
 
 
 $(document).ready(function() {
@@ -27,7 +27,7 @@ $(document).on('click', '.animal-btn', function() {
             animalImg.attr('src', response.data[i].images.original_still.url);
             animalImg.addClass(`${animalClicked} gif-images card-img-top p-0 img-responsive col-md-12 pb-2`);
             let animalBody = $('<div>');
-            animalBody.addClass('caption pl-3');
+            animalBody.addClass('caption pl-3 pt-2');
             animalBody.append(`<h3>${animalClicked}</h3><p>Rating: ${response.data[i].rating}</p>`);
             let animalCard = $('<div>');
             animalCard.addClass('card img-cards mt-2');
