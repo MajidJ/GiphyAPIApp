@@ -15,7 +15,7 @@ $(document).on('click', '.animal-btn', function() {
     console.log(animalClicked);
     let APIkey = "&api_key=Ihu91b8WQG80grTn4IPF3lGNvM8VyD18";
     let limit = "&limit=";
-    let limitNum = "5";
+    let limitNum = "10";
 
     let queryURL = baseURL + animalClicked + APIkey + limit + limitNum;
     console.log(queryURL);
