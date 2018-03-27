@@ -68,13 +68,13 @@ const  makeButtons = function() {
 $(document).on('click', 'img', function() {
     let src = $(this).attr("src");
     console.log(src);
-  if($(this).hasClass('playing')){
-     //stop
+  if($(this).hasClass('looping')){
+     //stop gif animation
      $(this).attr('src', src.replace(/\.gif/i, "_s.gif"))
-     $(this).removeClass('playing');
+     $(this).removeClass('looping');
   } else {
-    //play
-    $(this).addClass('playing');
+    //start gif animation
+    $(this).addClass('looping');
     $(this).attr('src', src.replace(/\_s.gif/i, ".gif"))
   }
 });
