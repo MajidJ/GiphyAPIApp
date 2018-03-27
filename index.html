@@ -6,26 +6,18 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Giphy API Search App</title>
 
-        <!-- jQuery CDN -->
-        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-
         <!-- Bootstrap -->
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
         <!-- Styling -->
         <link rel="stylesheet" href="assets/styling/styles.css">
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-default">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="#">Giphy Image Search</a>
+                        <a class="navbar-brand" href="#"><h1>Giphy Image Search</h1></a>
                     </div>
                     <div class="col-sm-5 col-md-4 pull-right">
                         <form class="navbar-form" role="search">
@@ -44,23 +36,39 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="panel panel-default">
-                            <div class="panel-heading text-center"><h2>Animal Buttons</h2></div>
-                            <div class="panel-body animal-buttons"></div>
+                        <div class="card mt-3">
+                            <div class="card-header text-center">
+                                <div class="card-title">
+                                    <h2>Animal Buttons</h2>
+                                </div>
+                            </div>
+                            <div class="card-body animal-buttons"></div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="panel panel-default">
-                            <div class="panel-heading text-center"><h2>Animal Images</h2></div>
-                            <div class="panel-body animal-imgs"></div>
+                        <div class="card mt-3">
+                            <div class="card-header text-center">
+                                    <div class="card-title">
+                                        <h2>Animal Images</h2>
+                                    </div>
+                                </div>
+                            <div class="card-body card-columns animal-imgs"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
         <!-- Scripts -->
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+
+
         <script src="assets/javascript/giphyapp.js"></script>
     </body>
 </html>

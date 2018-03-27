@@ -21,32 +21,32 @@ $(document).ready(function() {
             for (let i = 0; i < limitNum; i++) {
                 // console.log(response.data[i].images.fixed_width.url);
                 let animalImg = $('<img>');
-                animalImg.attr('src', response.data[i].images.original.url);
+                animalImg.attr('src', response.data[i].images.original_still.url);
                 animalImg.addClass(`${animalClicked} gif-images card-img-top p-0 img-responsive col-md-12 pb-2`);
                 let animalBody = $('<div>');
-                animalBody.addClass('caption');
+                animalBody.addClass('caption pl-3');
                 animalBody.append(`<h3>${animalClicked}</h3><p>testing this out heyyyyyy</p>`)
                 let animalCard = $('<div>');
-                animalCard.addClass('thumbnail');
+                animalCard.addClass('card mt-2');
                 animalCard.append(animalImg);
                 animalCard.append(animalBody);
                 let cardCol = $('<div>');
-                cardCol.addClass('col-md-4 col-xs-6');
+                cardCol.addClass('');
                 cardCol.append(animalCard);
                 $('.animal-imgs').prepend(cardCol);
             }
         });
-    
-    
         
     });
+
+    
 
 });
 
 const  makeButtons = function() {
     for (let i = 0; i < animals.length; i++) {
         let animalButton = $('<button>');
-        animalButton.addClass('btn btn-primary animal-btn');
+        animalButton.addClass('btn btn-primary animal-btn my-2 mx-2');
         animalButton.attr('value', animals[i]);
         animalButton.text(animals[i]);
         $('.animal-buttons').append(animalButton);
@@ -54,3 +54,16 @@ const  makeButtons = function() {
     
 };
 
+$(document).on('click', 'img', function() {
+    let src = $(this).attr("src");
+    console.log(src);
+  if($(this).hasClass('playing')){
+     //stop
+     $(this).attr('src', src.replace(/\.gif/i, "_s.gif"))
+     $(this).removeClass('playing');
+  } else {
+    //play
+    $(this).addClass('playing');
+    $(this).attr('src', src.replace(/\_s.gif/i, ".gif"))
+  }
+});

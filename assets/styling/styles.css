@@ -1,6 +1,3 @@
-.animal-buttons button {
-  margin: .5% 1%;
-}
 @media (max-width: 768px) {
   .navbar-header {
     float: left;
